@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+$font: "Raleway", sans-serif;
+
+nav{
+  font-family: $font;
+  background: linear-gradient(90deg, rgba(192, 192, 192, 1) 31%, rgba(247, 240, 245, 1) 100%);
+}
+
+.container-button{
+  margin-left: auto;
+  margin-right: 1.7rem;
+}
+
+button {
+  color: #020224;
+  text-decoration: none;
+  font-size: 25px;
+  border: none;
+  background: none;
+  font-weight: 600;
+}
+
+button::before {
+  margin-left: auto;
+}
+
+button::after, button::before {
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: #2958E6;
+  display: block;
+  transition: 0.5s;
+}
+  
+button:hover::after, button:hover::before {
+  width: 100%;
+}
