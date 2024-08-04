@@ -23,69 +23,10 @@
     margin-top: 20px;
 }
 
-.hero-img {
-    margin: 20px;
-    max-width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.carousel {
+.prestaciones::before{
+    margin-top: 1em;
+    display: flex;
+    content: "";
     width: 100%;
-    border-radius: 8px;
-    overflow: hidden; 
-}
-
-.carousel-item {
-    height: 500px;
-    width: 100%;
-    transition: opacity 0.5s ease-in-out; 
-}
-
-.carousel-item img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    transition: opacity 0.5s ease-in-out; 
-}
-
-.carousel-control-prev, .carousel-control-next {
-    filter: invert(100%); 
-}
-
-.carousel-control-prev-icon, .carousel-control-next-icon {
-    background-color: rgba(0, 0, 0, 0.3); 
-    border-radius: 50%; 
-}
-
-#carouselExampleCaptions {
-    margin-top: 20px;
-}
-
-.carousel-caption {
-    background-color: rgba(192, 192, 192, 0.6);
-    border-radius: 5px;
-    padding: 1rem;
-    max-width: 80%;
-    margin: 0 auto;
-    text-align: center;
-}
-
-h5 {
-    font-family: 'Lato', sans-serif;
-    font-size: x-large;
-    font-weight: bold;
-    color: #020224;
-    margin: 0; 
-}
-
-.texto {
-    font-family: 'Lato', sans-serif;
-    font-size: 0.95em;
-    color: #020224;
-    margin: 0; 
-}
-
-.carousel-inner {
-    border-radius: 8px; 
+    border: 1px #C0C0C0 solid;
 }
