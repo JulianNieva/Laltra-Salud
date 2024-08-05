@@ -1,4 +1,6 @@
-<div class="container mt-5 mb-5">
+<app-navbar (scrollToElement)="scrollToElement($event)"></app-navbar>
+
+<div class="container" id="inicio" data-bs-spy="scroll" data-bs-target="#main-navbar">
     <div class="row">
         <h1 class="display-4 custom-title">L´Altra Salud</h1>
         <app-carousel></app-carousel>
@@ -9,7 +11,7 @@
         </div>
     </div>
 
-    <div class="prestaciones">
+    <div class="prestaciones" id="servicios">
         <app-listado-prestaciones></app-listado-prestaciones>
     </div>
 </div>

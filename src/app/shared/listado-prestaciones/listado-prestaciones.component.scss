@@ -31,7 +31,7 @@ $font: "Raleway", sans-serif;
 }
 
 .contenedor-consultas{
-    background-color: beige;
+    background-color: rgba(192, 192, 192, 0.6);
     max-width: 35rem;
     display: flex;
     flex-wrap: wrap;
@@ -44,7 +44,6 @@ $font: "Raleway", sans-serif;
     p{
         color:crimson;
         font-size: 1.3em;
-        margin: 1%;
     }
 }
 
