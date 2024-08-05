@@ -1,24 +1,39 @@
-<nav class="navbar navbar-expand-lg">
-    <div class="container-fluid">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbar">
-        <a class="navbar-brand" [routerLink]="['/home']">
-          <img src="../../../assets/logo/logo.png" alt="Favicon" class="d-inline-block"
-            style="height: 50px; padding-right: 10px;">          
-            <span class="text">L´Altra 
-              <span style="font-weight: bold;">Salud</span>
-            </span>
-        </a>
-        <div class="container-button">
-            <button>Inicio</button>
-            <button>Servicios</button>
-        </div>
+<nav class="navbar navbar-expand-lg" id="main-navbar">
+  <div class="container-fluid">
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbar"
+      aria-controls="navbar"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbar">
+      <a class="navbar-brand">
+        <img
+          src="../../../assets/logo/logo.png"
+          alt="Favicon"
+          class="d-inline-block"
+          style="height: 50px; padding-right: 10px"
+        />
+        <span class="text"
+          >L´Altra
+          <span style="font-weight: bold">Salud</span>
+        </span>
+      </a>
+      <div class="container-button">
+        <a class="boton" (click)="scroll('inicio')">Inicio</a>
+        <a class="boton" (click)="scroll('servicios')">Servicios</a>
       </div>
     </div>
-  </nav>
-  
-  <section>
-    <ng-content select="router-outlet"></ng-content>
-  </section>
+  </div>
+</nav>
+
+<div class="boton-up" id="boton-up">
+  <button (click)="goTop()">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+</div>
