@@ -4,12 +4,14 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { RouterModule } from '@angular/router';
 import { CarouselComponent } from './carousel/carousel.component';
 import { ListadoPrestacionesComponent } from './listado-prestaciones/listado-prestaciones.component';
+import { CardsAnimDirective } from './directives/cards-anim.directive';
 
 @NgModule({
   declarations: [
     NavbarComponent,
     CarouselComponent,
-    ListadoPrestacionesComponent
+    ListadoPrestacionesComponent,
+    CardsAnimDirective
   ],
   imports: [
     RouterModule,

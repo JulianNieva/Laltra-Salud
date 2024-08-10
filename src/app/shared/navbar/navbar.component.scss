@@ -53,6 +53,7 @@ nav{
   right: 0;
   width: 4em;
   height: 4em;
+  z-index: 1;
   button{
     border-radius: 50%;
     background-color: #020224;
@@ -73,5 +74,15 @@ nav{
 
   .navbar-brand{
     display: none;
+  }
+}
+
+@media screen and (max-width: 575px){
+  .boton-up{
+    width: 2.5em;
+    height: 4em;
+    button{
+      font-size: 1.7rem;
+    }
   }
 }

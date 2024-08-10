@@ -17,7 +17,7 @@ export class NavbarComponent {
   @HostListener('window:scroll', ['$event'])
   onWindowScroll(event: Event) {
     const arrow = <HTMLAnchorElement>document.getElementById("boton-up");
-    if (window.scrollY > 300) { // Cambia 300 por la posición en la que deseo mostrar la flecha
+    if (window.scrollY > 300) {
       arrow.style.display = "block"
     } else {
       arrow.style.display = "none"
