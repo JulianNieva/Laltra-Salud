@@ -18,11 +18,26 @@ $font: "Raleway", sans-serif;
     margin-top: 2rem;
 }
 
+.card{
+    color: white;
+    background-color: #304a97;
+}
+
+.card-icon{
+    color: white;
+    margin-right: 0.5em;
+}
+
 .card-body{
     margin-top: 4rem;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+}
+
+.list-group{
+    --bs-list-group-bg:transparent;
+    --bs-list-group-color:white;
 }
 
 .list-group-item{
@@ -34,6 +49,7 @@ $font: "Raleway", sans-serif;
     height: 20rem;
     object-fit: inherit;
     padding: 2%;
+    border-radius: var(--bs-border-radius);
 }
 
 .text{
@@ -57,7 +73,7 @@ $font: "Raleway", sans-serif;
     }
 }
 
-.icon{
+.list-icon{
     color: #020224;
 }
 
@@ -78,12 +94,13 @@ $font: "Raleway", sans-serif;
 
     .imagen{
         height: 15rem;
+        border-radius: 8px;
     }
 }
 
 @media screen and (max-width: 768px) {
     .imagen{
         height: 25rem;
+        border-radius: 15px;
     }
 }
-
