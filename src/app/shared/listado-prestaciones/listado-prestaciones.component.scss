@@ -90,6 +90,7 @@ $font: "Raleway", sans-serif;
     .card-body{
         margin-top: unset;
         height: 100%;
+        padding: 5%;
     }
 
     .imagen{
@@ -100,7 +101,7 @@ $font: "Raleway", sans-serif;
 
 @media screen and (max-width: 768px) {
     .imagen{
-        height: 25rem;
+        height: 38vh;
         border-radius: 15px;
     }
 
