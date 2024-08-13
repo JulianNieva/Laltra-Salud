@@ -20,17 +20,28 @@
           style="height: 50px; padding-right: 10px"
         />
         <span class="text"
-          >L´Altra
+          >L´altra
           <span style="font-weight: bold">Salud</span>
         </span>
       </a>
       <div class="container-button">
+        <a class="boton" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+          Contacto
+        </a>
         <a class="boton" (click)="scroll('inicio')">Inicio</a>
         <a class="boton" (click)="scroll('servicios')">Estudios</a>
       </div>
     </div>
   </div>
 </nav>
+<div class="collapse" id="collapseExample">
+  <div class="contenedor-contacto">
+    <p><i class="bi bi-envelope-at contact-icon"></i><a href="mailto:laltramedicina@hotmail.com">laltramedicina&#64;hotmail.com</a></p>
+    <p><i class="bi bi-geo-alt contact-icon"></i>Avellaneda 240</p>
+    <p><i class="bi bi-telephone contact-icon"></i>0220-4835580</p>
+    <p><i class="bi bi-whatsapp contact-icon"></i>+54 9 11 4435-1111</p>
+  </div>
+</div>
 
 <div class="boton-up" id="boton-up">
   <button (click)="goTop()">

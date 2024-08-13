@@ -15,11 +15,13 @@ export class CardsAnimDirective {
         if (entry.isIntersecting) {
           const animationClass = this.animationType === 'left' ? 'slide-in-left' : 'slide-in-right';
           this.renderer.addClass(this.el.nativeElement, animationClass);
+          this.renderer.setStyle(this.el.nativeElement, 'visibility', 'visible');
           observer.unobserve(this.el.nativeElement);
         }
       });
     }, { threshold: 0.1 });
 
+    this.renderer.setStyle(this.el.nativeElement, 'visibility', 'hidden');
     observer.observe(this.el.nativeElement);
   }
 
