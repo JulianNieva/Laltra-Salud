@@ -67,7 +67,7 @@ $font: "Raleway", sans-serif;
     flex-direction: column;
     align-content: flex-start;
     text-align: left;
-    padding: 0.5rem 1rem;;
+    padding: 0.5rem 1rem;
     p{
         font-size: 1.3em;
     }
@@ -75,6 +75,27 @@ $font: "Raleway", sans-serif;
 
 .list-icon{
     color: #020224;
+}
+
+h2 {
+    position: relative;
+    display: inline-block; 
+    text-decoration: none; 
+}
+
+h2::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px; 
+    width: 100%;
+    height: 1px; 
+    background-color: rgba(0, 0, 0, 0.3); 
+}
+
+
+h3 {
+    text-decoration: underline;
 }
 
 

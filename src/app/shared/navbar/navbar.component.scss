@@ -83,12 +83,25 @@ nav{
   z-index: 1;
   button{
     border-radius: 50%;
-    background-color: #020224;
+    background-color: #1a1a1a;
     border: none;
     color: white;
     font-size: 2em;
     cursor: pointer;
   }
+}
+
+.boton-up {
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.boton-up button {
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.boton-up button:hover {
+  background-color: #020224; 
+  transform: scale(1.1); 
 }
 
 @media screen and (max-width:990px) {
